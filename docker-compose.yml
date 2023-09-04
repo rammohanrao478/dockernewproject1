@@ -1,28 +1,28 @@
 version: '3'
 services:
   devops:
-    image: rahamshaik/devopsreponit:latest
+    image: ramu478/devopsrepo
     ports:
       - "90:80"
     deploy:
       replicas: 3
 
   aws:
-    image: rahamshaik/awsreponit:latest
+    image: ramu478/awsrepo
     ports:
       - "91:80"
     deploy:
       replicas: 3
 
   datascience:
-    image: rahamshaik/datasciencereponit:latest
+    image: ramu478/dsrepo
     ports:
       - "92:80"
     deploy:
       replicas: 3
 
   azure:
-    image: rahamshaik/azurereponit:latest
+    image: ramu478/azurerepo
     ports:
       - "93:80"
     deploy:
